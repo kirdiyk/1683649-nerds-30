@@ -25,30 +25,33 @@
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
-  
     <main>
-      
+      <!-- Пока закомментить до времен как пройдем и осознаем формы 
       <section>
         <h2>Фильтры</h2>
         <fieldset>
           <legend>Стоимость:</legend>
-          <input type="range" id="cost" min="0" max="15000" step="100">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          <input type="range" id="cost" min="0" max="15000" step="100" />
+          <label class="min-price"
+            >от <input name="min-price" type="text" value="0"
+          /></label>
+          <label class="max-price"
+            >до <input name="max-price" type="text" value="15000"
+          /></label>
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
           <ul>
             <li>
-             <input type="radio" name="grid" id="filter-adaptive" checked>
+              <input type="radio" name="grid" id="filter-adaptive" checked />
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="grid" id="filter-fix">
+              <input type="radio" name="grid" id="filter-fix" />
               <label for="filter-fix">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="grid" id="filter-rubber">
+              <input type="radio" name="grid" id="filter-rubber" />
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
@@ -57,31 +60,30 @@
           <legend>Особенности:</legend>
           <ul>
             <li>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <input type="checkbox" name="slider" id="filter-slider" checked />
               <label for="filter-slider">Слайдер</label>
             </li>
             <li>
-                <input type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимущества</label>
+              <input type="checkbox" name="advantages" id="filter-advantages" />
+              <label for="filter-advantages">Блок преимущества</label>
             </li>
             <li>
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+              <input type="checkbox" name="news" id="filter-news" checked />
+              <label for="filter-news">Новости</label>
             </li>
             <li>
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-
+              <input type="checkbox" name="gallery" id="filter-gallery" />
+              <label for="filter-gallery">Галерея</label>
             </li>
             <li>
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+              <input type="checkbox" name="basket" id="filter-basket" />
+              <label for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <a href="#">Показать</a>
-       
+        <button type="submit">Показать</button>
       </section>
+    -->
       <section>
         <h2>Список шаблонов</h2>
         <p>Сортировать:</p>
@@ -93,54 +95,66 @@
         <ul>
           <li>
             <a href="#">
-              <img src="https://via.placeholder.com/360x619" alt="Sedona"/>
+              <img src="https://via.placeholder.com/360x619" alt="Sedona" />
             </a>
-              <!-- Засунуть в попап -->
-              <h3>Sedona</h3>   
-              <p>Информационный сайт<br> для туристов</p>
-              <a href="#">9990₽</a>
-            
-            
+            <h3>Sedona</h3>
+            <p>
+              Информационный сайт<br />
+              для туристов
+            </p>
+            <a href="#">9990₽</a>
           </li>
           <li>
             <a href="#">
-              <img src="https://via.placeholder.com/360x619" alt="Pink App"/>
-            </a>  
+              <img src="https://via.placeholder.com/360x619" alt="Pink App" />
+            </a>
             <h3>Pink App</h3>
-            <p>Продуктовый лендинг<br> приложения для iOS и Android copy</p>
-              <a href="#">9990₽</a>
+            <p>
+              Продуктовый лендинг<br />
+              приложения для iOS и Android copy
+            </p>
+            <a href="#">9990₽</a>
           </li>
           <li>
             <a href="#">
-              <img src="https://via.placeholder.com/360x619" alt="Barbershop"/>
-            </a>  
-              <h3>Barbershop</h3>
-              <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-              <a href="#">9990₽</a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="https://via.placeholder.com/360x619" alt="Mishka"/>
+              <img src="https://via.placeholder.com/360x619" alt="Barbershop" />
             </a>
-              <h3>Mishka</h3>
-              <p>Интернет-магазин <br> вязаных игрушек</p>
-              <a href="#">9990₽</a>
+            <h3>Barbershop</h3>
+            <p>Сайт салона красоты.<br />Для мужчин, да.</p>
+            <a href="#">9990₽</a>
           </li>
           <li>
             <a href="#">
-              <img src="https://via.placeholder.com/360x619" alt="A Plus"/>
+              <img src="https://via.placeholder.com/360x619" alt="Mishka" />
             </a>
-              <h3>A Plus</h3>
-              <p>Лендинг курсов повышения <br> квалификации</p>
-              <a href="#">9990₽</a>
+            <h3>Mishka</h3>
+            <p>
+              Интернет-магазин <br />
+              вязаных игрушек
+            </p>
+            <a href="#">9990₽</a>
           </li>
           <li>
             <a href="#">
-              <img src="https://via.placeholder.com/360x619" alt="Kvas"/>
-            </a>  
-              <h3>Kvas</h3>
-              <p>Промо-сайт производителя <br> крафтового кваса</p>
-              <a href="#">9990₽</a>
+              <img src="https://via.placeholder.com/360x619" alt="A Plus" />
+            </a>
+            <h3>A Plus</h3>
+            <p>
+              Лендинг курсов повышения <br />
+              квалификации
+            </p>
+            <a href="#">9990₽</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/360x619" alt="Kvas" />
+            </a>
+            <h3>Kvas</h3>
+            <p>
+              Промо-сайт производителя <br />
+              крафтового кваса
+            </p>
+            <a href="#">9990₽</a>
           </li>
         </ul>
         <ul>
@@ -151,8 +165,6 @@
         </ul>
       </section>
     </main>
-
-
     <footer>
       <section>
         <h2>Карта</h2>
@@ -163,8 +175,8 @@
         <li><a href="https://facebook.com">Фейсбук</a></li>
         <li><a href="https://instagram.com">Инстаграм</a></li>
       </ul>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div>Давайте дружить, это выгодно!</div>
+      <div>Скидка 10% для друзей из социальных сетей.</div>
     </footer>
   </body>
 </html>
