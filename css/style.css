@@ -1,0 +1,181 @@
+/*var */
+
+:root{
+  --basic-black: #000000;
+  --basic-extra-black: #283136;
+  --basic-extra-dark: #444444;
+  --basic-red: #FB565A;
+  --basic-white-back: #eeeeee;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+}
+
+
+/* font */
+
+@font-face {
+  font-family: "Roboto"; 
+  src: url(/fonts/roboto.woff2) format('woff2'),
+       url(/fonts/roboto.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/robotobold.woff2) format('woff2'),
+  url(/fonts/robotobold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* global */
+
+body{
+  min-width: 960;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--basic-extra-black);
+  background: white;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation,
+.basket {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.site-navigation {
+  list-style: none;
+}
+
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket:hover,
+.basket:focus {
+  color: var(--basic-red);
+}
+
+.service-item {
+  text-align: center;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.order-link-1,
+.order-link-2,
+.order-link-3
+{
+  border-radius: 3px;
+  padding: 16px 40px; 
+  display: inline-block;
+  background-color: var(--basic-red);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.order-link-2{
+  background-color: var(--basic-green);
+}
+
+.order-link-3{
+  background-color: var(--basic-yellow);
+}
+
+.order-link-1:hover,
+.order-link-1:focus{
+  background-color: #E74246;
+}
+
+.order-link-2:hover,
+.order-link-2:focus{
+  background-color: #00BC6C;
+}
+.order-link-3:hover,
+.order-link-3:focus{
+  background-color: #EAB534;
+}
+
+.description-title{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.order{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+ .order-list li::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+  margin: 0 11px 4px -37px;
+ }
+
+ .number{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+ }
+
+ .number sup{
+  font-size: 26px;
+  line-height: 40px;
+ }
+
+ /* Как менять цвет СВГ при наведении? */
+ .contacts-item:hover,
+ /* .contacts-item:focus */
+
+ {
+  stroke: background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+  fill: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+ }
+
+ .footer-title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+ }
+
+ .footer-text{
+  color: var(--basic-extra-dark);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+ }
