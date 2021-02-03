@@ -35,7 +35,7 @@
 
 /* global */
 
-body {
+.page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -46,6 +46,14 @@ body {
   color: var(--basic-extra-black);
   background: var(--basik-white);
   font-style: normal;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  margin-bottom: 70px;
 }
 
 a {
@@ -57,8 +65,58 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px; 
+}
+
+.main-header-bar {
+  background-color: var(--basik-white);
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.services {
+  margin-bottom: 80px;
+}  
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.service-item p {
+  margin: 0 10px;
+}
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 90px;
+}
+
 .main-navigation,
 .basket {
+  display: grid;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -129,6 +187,7 @@ img {
 .order-link-2:focus {
   background-color: var(--basic-extra-green);
 }
+
 .order-link-3:hover,
 .order-link-3:focus {
   background-color: var(--basic-extra-yellow);
@@ -148,7 +207,7 @@ img {
   text-transform: uppercase;
 }
 
- .order-list li::before {
+.order-list li::before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -157,13 +216,13 @@ img {
   margin: 0 11px 4px -37px;
  }
 
- .number {
+.number {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
  }
 
- .number sup {
+.number sup {
   font-size: 26px;
   line-height: 40px;
  }
@@ -217,6 +276,25 @@ img {
 
 .nav-num-item a {
   color: var(--basic-black);
+}
+
+.footer-discount {
+  text-align: left; 
+}
+
+.main-footer{
+  padding: 40px 0;
+  margin-top: 65px;
+}
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+
+.contacts{
+  width: 260px;
+  justify-self: start;
 }
 
  .footer-title {
