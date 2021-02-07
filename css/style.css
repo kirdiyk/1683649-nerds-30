@@ -54,6 +54,8 @@
 
 .main-header {
   margin-bottom: 70px;
+  padding-top: 49px;
+  padding-left: 140px;
 }
 
 a {
@@ -72,8 +74,8 @@ img {
 }
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  /* display: grid; */
+  /* grid-template-columns: 1fr min-content; */
   width: 940px;
   margin: 0 auto;
   padding: 0 10px; 
@@ -105,6 +107,7 @@ img {
 
 .index-columns {
   display: grid;
+  column-gap: 150px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -116,12 +119,20 @@ img {
 
 .main-navigation,
 .basket {
-  display: grid;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   background-color: transparent;
+  /* padding-top: 75px; */
+}
+
+.main-header-logo,
+.main-navigation,
+.user-navigation{
+  display: grid;
 }
 
 .site-navigation,
@@ -138,8 +149,31 @@ img {
   padding: 0;
 }
 
+.site-navigation,
+.user-navigation{
+  /* padding-left: 203px; */
+  display: flex;
+  align-items: center;
+  width: min-content;
+  margin: 0;
+}
+
+.site-navigation li{
+  flex-direction: row-reverse;
+  padding-right: 25px;
+}
+
 .site-navigation a {
   color: var(--basic-black);
+}
+
+.basket,
+.basket-title {
+  display: flex;
+}
+
+.basket-title{
+  margin: 0px 25px;
 }
 
 .site-navigation a:hover,
@@ -216,6 +250,10 @@ img {
   margin: 0 11px 4px -37px;
  }
 
+.numbers{
+  display: flex;
+} 
+
 .number {
   font-weight: bold;
   font-size: 45px;
@@ -237,6 +275,27 @@ img {
  } */
 
  /* page 2 catalog */
+
+.sort{
+  display: flex;
+}
+
+.sort-text{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+} 
+
+.sort-filter{
+  display: flex;
+  justify-self: end;
+}
+
+.sort-item{
+  padding-right: 25px;
+}
+
 .sort-item a {
   font-weight: normal;
   font-size: 14px;
@@ -250,6 +309,31 @@ img {
   opacity: 0.3;
 }
 
+/* временно пока не заверстаю форму с сортировкой */
+.catalog-container{
+  margin-left: 541px;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item{
+  width: 360px;
+  min-height: 619px;
+  margin-right: 42px;
+  margin-bottom: 31px;
+}
+/* 
+.project-item:nth-child(2n){
+  margin-right: 460px; 
+} */
+
+.nav-num{
+  display: flex;
+}
+
 .nav-num-item {
   font-weight: 500;
   font-size: 16px;
@@ -260,6 +344,7 @@ img {
   text-transform: uppercase;
   width: 50px;
   height: 50px;
+  margin-right: 11px;
 }
 
 .nav-num-item:nth-child(1) {
@@ -293,17 +378,25 @@ img {
 }
 
 .contacts{
+  display: flex;
   width: 260px;
   justify-self: start;
+  padding-right: 139px;
 }
 
- .footer-title {
+.contacts-item{
+  height: 81px;
+  width: 81px;
+  padding-right: 9px;
+}
+
+.footer-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
  }
 
- .footer-text {
+.footer-text {
   color: var(--basic-extra-dark);
   font-weight: normal;
   font-size: 16px;

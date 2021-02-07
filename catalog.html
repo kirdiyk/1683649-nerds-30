@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <title>HTML Academy: Нёрдс Каталог</title>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -13,20 +13,26 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" height="65" width="160" alt="Лого студии Нёрдс" />
         </a>
-        <ul class="site-navigation">
-          <li><a href="#">Контакты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="index.html">Студия</a></li>
-        </ul>
-        <a class="basket" href="#">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка Корзины"/>
-          Корзина
-        </a>
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
+            <ul class="site-navigation">
+              <li><a href="#">Контакты</a></li>
+              <li><a>Магазин</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="index.html">Студия</a></li>
+            </ul>
+            <div class="user-navigation">
+              <a class="basket" href="#">
+                <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка Корзины" />
+                <div class="basket-title">Корзина</div>
+              </a>
+            </div> 
+          </div>
+        </div>  
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
-    <main>
+    <main class="catalog-container">
       <!-- Пока закомментить до времен как пройдем и осознаем формы 
       <section>
         <h2>Фильтры</h2>
@@ -87,14 +93,16 @@
     -->
       <section>
         <h2>Список шаблонов</h2>
-        <p class="sort">Сортировать:</p>
-        <ul class="sort-filter">
-          <li class="sort-item"><a>По цене</a></li>
-          <li class="sort-item"><a href="#">По типу</a></li>
-          <li class="sort-item"><a href="#">По названию</a></li>
-        </ul>
+        <div class="sort">
+          <p class="sort-text">Сортировать:</p>
+          <ul class="sort-filter">
+            <li class="sort-item"><a>По цене</a></li>
+            <li class="sort-item"><a href="#">По типу</a></li>
+            <li class="sort-item"><a href="#">По названию</a></li>
+          </ul>
+        </div>
         <ul class="projects">
-          <li>
+          <li class="project-item">
             <a href="#">
               <img src="img/sedona.jpg" width="360" height="619" alt="Sedona" />
             </a>
@@ -105,7 +113,7 @@
             </p>
             <a href="#">9990₽</a>
           </li>
-          <li>
+          <li class="project-item">
             <a href="#">
               <img src="img/pink.jpg" width="360" height="619" alt="Pink App" />
             </a>
@@ -116,7 +124,7 @@
             </p>
             <a href="#">9990₽</a>
           </li>
-          <li>
+          <li class="project-item">
             <a href="#">
               <img src="img/bar-shop.jpg" width="360" height="619" alt="Barbershop" />
             </a>
@@ -124,7 +132,7 @@
             <p>Сайт салона красоты.<br />Для мужчин, да.</p>
             <a href="#">9990₽</a>
           </li>
-          <li>
+          <li class="project-item">
             <a href="#">
               <img src="img/mishka.jpg" width="360" height="619" alt="Mishka" />
             </a>
@@ -135,7 +143,7 @@
             </p>
             <a href="#">9990₽</a>
           </li>
-          <li>
+          <li class="project-item">
             <a href="#">
               <img src="img/a-plus.jpg" width="360" height="619" alt="A Plus" />
             </a>
@@ -146,7 +154,7 @@
             </p>
             <a href="#">9990₽</a>
           </li>
-          <li>
+          <li class="project-item">
             <a href="#">
               <img src="img/kvas.jpg" width="360" height="619" alt="Kvas" />
             </a>
@@ -171,25 +179,29 @@
         <h2>Карта</h2>
         <!-- map -->
       </section>
-      <ul class="contacts">
-        <li class="contacts-item">
-          <a href="https://vk.com">
-            <img src="img/vk.svg" width="81" height="81"  alt="Лого Вконтакте" /> 
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a href="https://facebook.com">
-            <img src="img/fb.svg" width="81" height="81"  alt="Лого Фейсбука" />
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a href="https://instagram.com">
-            <img src="img/inst.svg" width="81" height="81"  alt="Лого сайта Инстаграм" />
-          </a>
-        </li>
-      </ul>
-      <div class="footer-title">Давайте дружить, это выгодно!</div>
-      <div class="footer-text">Скидка 10% для друзей из социальных сетей.</div>
+      <div class="container">
+        <ul class="contacts">
+          <li class="contacts-item">
+            <a href="https://vk.com">
+              <img class="svg-vk" src="img/vk.svg" width="81" height="81"  alt="Лого Вконтакте" /> 
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="https://facebook.com">
+              <img src="img/fb.svg" width="81" height="81"  alt="Лого Фейсбука" />
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="https://instagram.com">
+              <img src="img/inst.svg" width="81" height="81"  alt="Лого сайта Инстаграм" />
+            </a>
+          </li>
+        </ul>
+        <div class="footer-discount">
+          <div class="footer-title">Давайте дружить, это выгодно!</div>
+          <div class="footer-text">Скидка 10% для друзей из социальных сетей.</div>
+        </div>
+      </div>    
     </footer>
   </body>
 </html>
