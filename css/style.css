@@ -239,6 +239,10 @@ img {
   margin: 0 10px;
 }
 
+.service-text{
+  font-weight: normal;
+}
+
 .index-columns {
   display: grid;
   column-gap: 150px;
@@ -363,6 +367,7 @@ img {
 
 .site-navigation a {
   color: var(--basic-black);
+  font-weight: 500;
 }
 
 .user-navigation{
@@ -478,12 +483,16 @@ img {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
- }
+}
+
+.number p{
+  font-weight: normal;
+}
 
 .number sup {
   font-size: 26px;
   line-height: 40px;
- }
+}
 
 .price-controls input {
   width: 60px;
@@ -1024,6 +1033,10 @@ img {
   margin-bottom: 71px;
 }
 
+.contacts-address{
+  font-weight: normal;
+}
+
 .contacts .container {
   position: relative;
   z-index: 10;
@@ -1226,12 +1239,14 @@ img {
   display: block;
   width: 50%;
   margin-bottom: 6px;
+  font-weight: bold;
 }
 
 .modal-label-message {
   display: block;
   width: 100%;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .modal-message input {
