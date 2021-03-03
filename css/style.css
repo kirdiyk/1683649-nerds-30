@@ -43,7 +43,7 @@
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: var(--basic-extra-black);
   background: var(--basik-white);
@@ -56,7 +56,7 @@
 
 .main-header {
   background-color: var(--basic-white-back);
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   padding-top: 49px;
   padding-left: 140px;
 }
@@ -114,15 +114,17 @@ img {
 
 .slider-button {
   padding: 16px 54px;
+  font-weight: 500;
 }
 
 .slider-item {
   display: none;
-  min-height: 430px;
+  /* min-height: 430px; */
   margin: 0;
   padding: 77px 50% 80px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
+  font-weight: 500;
 }
 
 .slide-1:checked ~ .slider-item-1,
@@ -171,8 +173,8 @@ img {
 .slide-3:checked ~ .slider-control label[for="slide-3"]::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  left: 3px;
   width: 8px;
   height: 8px;
   border: 2px solid var(--basic-deep-gray);
@@ -356,6 +358,7 @@ img {
 .site-navigation li{
   flex-direction: row-reverse;
   margin-right: 25px;
+  font-weight: 500;
 }
 
 .site-navigation a {
@@ -373,6 +376,7 @@ img {
 
 .basket-title {
   margin: 0px 25px;
+  font-weight: 500;
 }
 
 .site-navigation a:hover,
@@ -398,11 +402,13 @@ img {
 
 .service-item {
   text-align: center;
+  font-weight: normal;
 }
 
 .service-item h3 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
 }
 
 .order-link-1,
@@ -415,6 +421,7 @@ img {
   color: var(--basik-white);
   text-align: center;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .order-link-2 {
@@ -800,11 +807,15 @@ img {
 .project-item {
   border-top: 40px solid #e9e9e9;
   border-radius: 4px;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 33px;
 }
 
-.project-item::before {
+.card-item{
+  position: relative;
+}
+
+.card-item::before {
   content: "";
   position: absolute;
   top: -39px;
@@ -813,7 +824,7 @@ img {
   height: 40px;
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
-  fill-opacity: 0.12;
+  opacity: .12;
 }
 
 .templates-inner {
@@ -821,11 +832,11 @@ img {
   overflow: hidden;
 }
 
-.project-item :focus::before,
-.project-item :hover::before {
+.card-item :focus::before,
+.card-item :hover::before {
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
-  fill-opacity: 1;
+  opacity: 1;
 }
 
 .card {
@@ -854,6 +865,7 @@ img {
 
 .card p {
   line-height: 18px;
+  font-weight: normal;
   color: var(--basic-dark-grey);
   margin-bottom: 29px;
 }
@@ -998,6 +1010,7 @@ img {
 .contacts {
   min-width: 100%;
   min-height: 416px;
+  overflow: hidden;
   background-color: #ece4c6;
   background-image: url(../img/map-1.png);
   background-size: cover;
@@ -1026,6 +1039,7 @@ img {
   padding: 50px 0px;
   padding-left: 50px;
   font-size: 16px;
+  font-weight: normal;
   line-height: 18px;
   color: var(--basic-dark-grey);
   background-color: var(--basik-white);
@@ -1112,10 +1126,10 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
- }
+}
 
  /* modal */
- .modal-message-back {
+.modal-message-back {
   position: fixed;
   top: 0;
   left: 0;
@@ -1161,7 +1175,7 @@ img {
 
 .modal-message h2 {
   display: block;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 45px;
   line-height: 28px;
   padding-left: 0px;
