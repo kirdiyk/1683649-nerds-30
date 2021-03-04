@@ -29,6 +29,14 @@
 }
 
 @font-face {
+  font-family: "Roboto"; 
+  src: url(../fonts/robotomedium.woff2) format('woff2'),
+       url(../fonts/robotomedium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Roboto";
   src: url(../fonts/robotobold.woff2) format('woff2'),
   url(../fonts/robotobold.woff) format('woff');
@@ -48,6 +56,7 @@
   color: var(--basic-extra-black);
   background: var(--basik-white);
   font-style: normal;
+  font-weight: normal;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -110,6 +119,8 @@ img {
   max-width: 415px;
   margin-top: 0;
   margin-bottom: 38px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .slider-button {
@@ -243,10 +254,14 @@ img {
   font-weight: normal;
 }
 
+.job{
+  padding-left: 50px;
+}
+
 .index-columns {
   display: grid;
-  column-gap: 150px;
-  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  grid-template-columns: 2fr 1fr;
   border-top: 2px solid var(--basic-white-back);
   padding-top: 73px;
 }
@@ -357,21 +372,25 @@ img {
   align-items: center;
   width: min-content;
   margin-bottom: 10px;
+  
 }
 
 .site-navigation li{
   flex-direction: row-reverse;
   margin-right: 25px;
-  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .site-navigation a {
   color: var(--basic-black);
+  font-style: normal;
   font-weight: 500;
 }
 
 .user-navigation{
   padding-left: 246px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .basket,
@@ -382,6 +401,7 @@ img {
 .basket-title {
   margin: 0px 25px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .site-navigation a:hover,
@@ -456,7 +476,15 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin-bottom: 34px;
+  display: block;
   color: var(--basic-black);
+}
+
+.description p {
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .order {
@@ -464,6 +492,15 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.order-list{
+  vertical-align: middle;
+}
+
+.order-list li{
+  padding-left: 36px;
+  margin-top: 25px;
 }
 
 .order-list li::before {
@@ -478,6 +515,10 @@ img {
 .numbers{
   display: flex;
 } 
+
+.numbers li{
+  margin-left: 17px;
+}
 
 .number {
   font-weight: bold;
@@ -1001,7 +1042,7 @@ img {
 
 .main-footer {
   padding: 40px 0;
-  margin-top: 65px;
+  /* margin-top: 65px; */
 }
 
 .container map {
@@ -1030,7 +1071,7 @@ img {
 .contacts {
   position: relative;
   min-height: 416px;
-  margin-bottom: 71px;
+  /* margin-bottom: 71px; */
 }
 
 .contacts-address{
