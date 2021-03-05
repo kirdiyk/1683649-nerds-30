@@ -67,7 +67,8 @@
   background-color: var(--basic-white-back);
   /* margin-bottom: 70px; */
   padding-top: 49px;
-  padding-left: 140px;
+  /* padding-left: 140px; */
+  min-width: 1160px;
 }
 
 .main-navigation{
@@ -402,6 +403,10 @@ img {
   margin: 0px 25px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.title-catalog{
+  padding-bottom: 71px;
 }
 
 .site-navigation a:hover,
@@ -816,9 +821,12 @@ img {
 }
 
 .arrow-box {
-  position:absolute;
   display:inline-block;
-  right: 140px;
+  padding-left: 20px;
+}
+
+.arrow-down{
+  padding-right: 18px;
 }
 
 .arrow-box a {
@@ -1016,13 +1024,14 @@ img {
   text-transform: uppercase;
   width: 50px;
   height: 50px;
+  border: 3px solid var(--basic-white-back);
   margin-right: 11px;
 }
 
 .nav-num-item:nth-child(1) {
   background-color: var(--basik-white);
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
   border-radius: 3px;
   border: 3px solid var(--basik-grey);
 }
@@ -1038,6 +1047,7 @@ img {
 .footer-discount {
   text-align: left; 
   margin-top: 75px;
+  padding-left: 140px;
 }
 
 .main-footer {
@@ -1130,7 +1140,7 @@ img {
   display: flex;
   width: 260px;
   justify-self: start;
-  padding-right: 139px;
+  /* padding-right: 139px; */
   margin-top: 68px;
   list-style-type: none;
 }
@@ -1173,6 +1183,7 @@ img {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 10px;
 } 
 
 .footer-text {
